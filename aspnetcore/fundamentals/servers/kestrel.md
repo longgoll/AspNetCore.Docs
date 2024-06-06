@@ -1,26 +1,26 @@
 ---
-title: Kestrel web server in ASP.NET Core
+title: Máy chủ web Kestrel trong ASP.NET Core
 author: tdykstra
-description: Learn about Kestrel, the cross-platform web server for ASP.NET Core.
+description: Tìm hiểu về Kestrel, máy chủ web đa nền tảng cho ASP.NET Core.
 monikerRange: '>= aspnetcore-3.1'
 ms.author: tdykstra
 ms.custom: mvc
 ms.date: 04/04/2023
 uid: fundamentals/servers/kestrel
 ---
-# Kestrel web server in ASP.NET Core
+# Máy chủ web Kestrel trong ASP.NET Core
 
-By [Tom Dykstra](https://github.com/tdykstra), [Chris Ross](https://github.com/Tratcher), and [Stephen Halter](https://twitter.com/halter73)
+Bởi [Tom Dykstra](https://github.com/tdykstra), [Chris Ross](https://github.com/Tratcher), và [Stephen Halter](https://twitter.com/halter73)
 
 :::moniker range=">= aspnetcore-8.0"
 
-Kestrel is a cross-platform [web server for ASP.NET Core](xref:fundamentals/servers/index). Kestrel is the recommended server for ASP.NET Core, and it's configured by default in ASP.NET Core project templates.
+Kestrel là một nền tảng đa nền tảng(cross-platform) [web server for ASP.NET Core](xref:fundamentals/servers/index). Kestrel là máy chủ được đề xuất cho ASP.NET Core và được cấu hình theo mặc định trong các mẫu dự án ASP.NET Core.
 
-Kestrel's features include:
+Các tính năng của Kestrel bao gồm:
 
-* **Cross-platform:** Kestrel is a cross-platform web server that runs on Windows, Linux, and macOS.
-* **High performance:** Kestrel is optimized to handle a large number of concurrent connections efficiently.
-* **Lightweight:** Optimized for running in resource-constrained environments, such as containers and edge devices.
+* **Cross-platform(đa nền tảng):** Kestrel là một máy chủ web đa nền tảng chạy trên Windows, Linux và macOS.
+* **High performance(Hiệu suất cao):** Kestrel được tối ưu hóa để xử lý hiệu quả số lượng lớn kết nối đồng thời.
+* **Lightweight:** Tối ưu hóa để chạy trong các môi trường bị giới hạn tài nguyên, như các container(phương pháp ảo hóa) và edge devices().
 * **Security hardened:** Kestrel supports HTTPS and is hardened against web server vulnerabilities.
 * **Wide protocol support:** Kestrel supports common web protocols, including:
   * HTTP/1.1, [HTTP/2](xref:fundamentals/servers/kestrel/http2) and [HTTP/3](xref:fundamentals/servers/kestrel/http3)
